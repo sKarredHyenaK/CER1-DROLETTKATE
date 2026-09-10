@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Cultural Puerto Abierto</title>
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!--Archivo CSS style-->
+    <link href="style.css" rel="stylesheet">
+
+    <!--Tipo de letra adicional-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <header>
+
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid">
+
+                <img src="img/icono.png" alt="Logo" width="50" class="me-3">
+                <a class="navbar-brand" href="#">Centro Cultural Puerto Abierto</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a> <!--ACTIVE-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="actividades.html">Cartelera de Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inscripcion.html">Inscripción</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+            <!--BIENVENIDA-->
+        <section class="container mt-5"> 
+            <h1>Bienvenidos a Puerto Abierto</h1>
+                <p class="lead">
+                    El Centro Cultural Puerto Abierto es una organización dedicada a promover actividades artísticas, culturales y educativas para la comunidad.
+                </p>
+        </section>
+        <div class="container-fluid p-0 my-4"> 
+            <img src="img/puerto_panorámica.jpg" class="img-fluid rounded mt-4 mb-4" alt="Banner del Centro Cultural Puerto Abierto">
+        </div>
+        
+    </header>
+
+    <main>
+
+        <article>
+
+            <!--ACTIVIDADES DESTACADAS-->
+            <section> 
+                <div class="container mt-4">
+                    <h3 class="text-center mb-4">Actividades Destacadas</h3>
+                    <p class="text-center mb-4">Actividades con mayor número de inscripciones</p>
+                    <br>
+                    <div class="row gap-4 justify-content-center">
+                        <div class="card" style="width: 256px;">
+                            <img src="img/tallerpintura.jpg" class="card-img-top" alt="tallerpintura">
+                            <div class="card-body">
+                                <p class="card-text">Taller de Pintura Acrílica</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 256px;">
+                            <img src="img/rostrosdelmar.jpg" class="card-img-top" alt="rostrodelmar">
+                            <div class="card-body">
+                                <p class="card-text">Muestra "Rostros del Mar"</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 256px;">
+                            <img src="img/poesia.jpg" class="card-img-top" alt="poesia">
+                            <div class="card-body">
+                                <p class="card-text">Club de Lectura: Poesía</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h5>Contacto</h5>
+                    <p>Telefono: +56 9 1234 5678</p>
+                    <p>Correo: contacto@puertoabierto.com</p>
+                </div>
+                <div class="col">
+                    <h5>Ubicación</h5>
+                    <p>Calle Algunlugar 321, Puerto Abierto</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

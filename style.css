@@ -1,0 +1,106 @@
+/* 1. FONDO Y TIPO DE LETRA */
+body {
+    background-image: url('img/background-pattern.jpg');
+
+    /* Ajustes para cubrir toda la pantalla  */
+    background-size: cover;       /* Escala la imagen para cubrir todo el espacio */
+    background-position: center;  /* Centrar imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija */
+
+    background-color: #0A2342; /* color de fondo como respaldo */
+    
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #e7e6e6;
+}
+
+/* 2. NAVBAR*/
+.navbar {
+    background-color: #2CA58D !important; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Pequeña sombra debajo del menú */
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important; 
+}
+
+.nav-link:hover {
+    color: #89c2d9 !important; /* Color celeste al pasar el mouse por encima */
+}
+
+/* 3. TARJETAS */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* La tarjeta sube ligeramente */
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.15); /* La sombra se hace más grande */
+}
+
+/* 4. AJUSTAR TAMAÑO A IMAGENES (Evitar deformaciones) */
+.card-img-top {
+    height: 220px;
+    object-fit: cover; /* Recorta la imagen proporcionalmente sin deformarla */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/* 5. BANNER */
+header img.img-fluid {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover; /* Para que el banner panorámico no se deforme */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+/* 6. PIE DE PAGINA*/
+footer {
+    background-color: #3A506B; 
+    color: #ecf0f1; 
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+
+footer h5 {
+    color: #5BC0BE; 
+    margin-bottom: 15px;
+}
+
+/* Eliminar hr */
+footer hr {
+    display: none; 
+}
+
+/* 7. ESTILOS CASILLAS DE INSCRIPCION */
+
+.form-contenedor {
+    max-width: 550px; /* Ancho máximo */
+    width: 100%;      /* Permite encogerse en celular */
+    margin: 0 auto;     /* Mantiene el formulario centrado */
+}   
+
+/* Color de fondo para las casillas normales */
+.form-control, .form-select {
+    background-color: #f0f8ff; 
+    border: 1px solid #b3d4fc; 
+    color: #333333; 
+}
+
+/* Color cuando el usuario hace clic para escribir */
+.form-control:focus, .form-select:focus {
+    background-color: #ffffff; /* Hace que vuelva a ser blanco al escribir para leer mejor */
+    border-color: #1a4f76; 
+    box-shadow: 0 0 0 0.25rem rgba(26, 79, 118, 0.25); /* Sombra */
+}
